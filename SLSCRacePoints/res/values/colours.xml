@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF0000</color>
+    <color name="actionbar_text">#33B5E5</color>
+    <color name="slsc_green">#009D28</color>
+    <color name="slsc_red">#EE0000</color>
+    <color name="slsc_yellow">#FFD700</color>
+    <color name="slsc_blue">#63B8FF</color>
+    <color name="white">#FFFFFF</color>
+</resources>

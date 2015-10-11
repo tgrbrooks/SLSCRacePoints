@@ -1,0 +1,68 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+        <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"/>
+    	<!-- Button to go to new race screen -->
+	    <Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:background="@color/slsc_green"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+	    android:text="@string/new_race"
+	    android:onClick="goNewRaceScreen"/>
+	    <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"/>
+		<!-- Button to go to edit race screen -->
+	    <Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:background="@color/slsc_yellow"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+	    android:text="@string/edit_race"
+	    android:onClick="goEditRaceScreen"/>
+	    <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"/>
+	    <!-- Button to go to new swimmer screen -->
+	    <Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:background="@color/slsc_blue"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+	    android:text="@string/new_swimmer"
+	    android:onClick="goNewSwimmerScreen"/>
+	    <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"/>
+	    <!-- Button to go to edit swimmer screen -->
+	    <Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:background="@color/slsc_red"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+	    android:text="@string/edit_swimmer"
+	    android:onClick="goEditSwimmerScreen"/>
+
+</LinearLayout>
+</ScrollView>

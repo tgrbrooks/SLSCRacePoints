@@ -1,0 +1,2442 @@
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout 
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:background="@color/white"
+       	android:orientation="horizontal" >
+        <TextView 
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="@string/swimmer"/>
+        <TextView 
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="@string/time"/>
+    </LinearLayout>
+    <ListView android:id="@+id/listViewTimes2" 
+        android:layout_width="fill_parent"
+  		android:layout_height="fill_parent" />
+   <!-- <LinearLayout android:id="@+id/swimmer1"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner
+            android:id="@+id/swimmer_spinner1"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/race_time_min1"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec1"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+    <LinearLayout android:id="@+id/swimmer2"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner2"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min2"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec2"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout> 
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer3"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner3"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min3"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec3"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer4"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner4"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+    <LinearLayout  android:id="@+id/swimmer5"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner5"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min5"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec5"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout  android:id="@+id/swimmer6"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner6"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min6"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec6"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout  android:id="@+id/swimmer7"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner7"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min7"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec7"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout  android:id="@+id/swimmer8"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner8"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min8"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec8"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout  android:id="@+id/swimmer9"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner9"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min9"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec9"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer10"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner10"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min10"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec10"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer11"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner11"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min11"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec11"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer12"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner12"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min12"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec12"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer13"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner13"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min13"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec13"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer14"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner14"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min14"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec14"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer15"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner15"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min15"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec15"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer16"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner16"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min16"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec16"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer17"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner17"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min17"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec17"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer18"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner18"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min18"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec18"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer19"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner19"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min19"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec19"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer20"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner20"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min20"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec20"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer21"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner21"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min21"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec21"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer22"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner22"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min22"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec22"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout  android:id="@+id/swimmer23"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner23"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min23"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec23"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer24"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner24"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min24"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec24"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer25"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner25"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min25"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec25"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer26"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner26"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min26"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec26"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer27"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner27"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min27"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec27"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer28"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner28"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min28"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec28"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer29"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner29"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min29"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec29"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer30"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner30"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min30"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec30"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer31"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner31"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min31"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec31"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer32"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner32"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min32"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec32"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer33"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner33"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min33"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec33"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer34"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner34"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min34"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec34"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer35"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner35"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min35"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec35"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer36"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner36"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min36"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec36"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer37"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner37"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min37"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec37"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer38"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner38"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min38"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec38"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer39"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner39"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min39"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec39"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer40"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner40"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min40"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec40"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer41"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner41"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min41"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec41"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer42"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner42"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min42"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec42"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer43"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner43"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min43"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec43"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer44"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner44"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min44"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec44"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer45"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner45"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min45"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec45"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer46"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner46"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min46"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec46"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer47"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner47"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min47"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec47"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer48"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner48"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min48"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec48"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer49"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner49"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min49"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec49"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout  android:id="@+id/swimmer50"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner50"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min50"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec50"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer51"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner51"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min51"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec51"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer52"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner52"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min52"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec52"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout  android:id="@+id/swimmer53"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner53"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min53"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec53"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer54"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner54"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min54"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec54"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer55"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner55"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min55"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec55"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer56"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner56"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min56"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec56"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer57"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_green"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner57"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min57"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec57"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer58"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_yellow" 
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner58"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min58"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec58"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer59"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_blue"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner59"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min59"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec59"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+        <LinearLayout android:id="@+id/swimmer60"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:orientation="horizontal" 
+       	android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/slsc_red"
+       	android:visibility="gone">
+        <Spinner android:id="@+id/swimmer_spinner60"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/race_time_min60"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/min" />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="." />
+        <EditText
+            android:id="@+id/race_time_sec60"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:hint="@string/sec" />
+    </LinearLayout> -->
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/button_submit"
+        android:onClick="submitResults"/>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/white"/>
+</LinearLayout>
+<!--</ScrollView>-->
